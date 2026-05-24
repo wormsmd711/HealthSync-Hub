@@ -26,7 +26,7 @@ jobs:
           gradle-version: 8.7
 
       - name: Build release AAB
-        run: gradle bundleRelease
+        run: gradle :app:bundleRelease
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
