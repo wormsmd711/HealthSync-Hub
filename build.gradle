@@ -13,4 +13,8 @@ allprojects {
         google()
         mavenCentral()
     }
-}apply plugin: 'com.android.application'
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
